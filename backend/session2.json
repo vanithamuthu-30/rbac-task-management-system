@@ -1,0 +1,384 @@
+{
+  "type": "session_started",
+  "payload": {
+    "session_id": "2ba8fb04-7656-4244-bc25-e78d8eb12e76",
+    "device_id": "DEVICE_001"
+  }
+}
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 1,
+    "transcript": "Good afternoon. We have a reservation for the Royal Executive Suite.",
+    "role": "Guest",
+    "speaker_id": "Speaker1",
+    "start_ts": 0.19,
+    "end_ts": 5.430000000000001,
+    "indicators": {
+      "vip_alert": {
+        "status": true,
+        "details": {
+          "message": "VIP guest detected (suite_guest). Indicators: Royal Executive Suite",
+          "type": "suite_guest",
+          "indicators": [
+            "Royal Executive Suite"
+          ]
+        }
+      }
+    },
+    "session_id": "2ba8fb04-7656-4244-bc25-e78d8eb12e76",
+    "device_id": "DEVICE_001"
+  }
+}
+//
+
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 2,
+    "transcript": "Good afternoon, Sir. Can I have your name please? We're quite busy today.",
+    "role": "Agent",
+    "speaker_id": "Speaker2",
+    "start_ts": 5.43,
+    "end_ts": 9.71,
+    "indicators": {
+      "adversarial_alert": {
+        "status": true,
+        "details": {
+          "message": "Etiquette/protocol breach identified.",
+          "categories": [
+            "rude_language"
+          ]
+        }
+      },
+      "vip_management_alert": {
+        "status": true,
+        "details": {
+          "message": "VIP management actions missing for suite_guest. Suggestions: recognition of status, priority handling, upgrade/amenities",
+          "vip_type": "suite_guest",
+          "missing": [
+            "recognition of status",
+            "priority handling",
+            "upgrade/amenities"
+          ]
+        }
+      }
+    },
+    "session_id": "2ba8fb04-7656-4244-bc25-e78d8eb12e76",
+    "device_id": "DEVICE_001"
+  }
+}
+
+//
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 4,
+    "transcript": "OK, let me check the system. Please wait a moment.",
+    "role": "Agent",
+    "speaker_id": "Speaker2",
+    "start_ts": 15.03,
+    "end_ts": 17.55,
+    "indicators": {
+      "speech_rate_alert": {
+        "status": true,
+        "details": {
+          "message": "Speech rate 238 WPM is outside the comfortable band [85, 200].",
+          "wpm": 238,
+          "band": "high"
+        }
+      }
+    },
+    "session_id": "2ba8fb04-7656-4244-bc25-e78d8eb12e76",
+    "device_id": "DEVICE_001"
+  }
+}
+//
+
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 5,
+    "transcript": "How much longer will this take? We have been travelling for many hours.",
+    "role": "Guest",
+    "speaker_id": "Speaker1",
+    "start_ts": 17.55,
+    "end_ts": 22.91,
+    "indicators": {
+      "negative_sentiment_alert": {
+        "status": true,
+        "details": {
+          "message": "Negative guest sentiment detected in this turn.",
+          "score": 1
+        }
+      }
+    },
+    "session_id": "2ba8fb04-7656-4244-bc25-e78d8eb12e76",
+    "device_id": "DEVICE_001"
+  }
+}
+
+//
+
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 12,
+    "transcript": "Us the system is running slow today. Please take a seat in the regular lobby area.",
+    "role": "Agent",
+    "speaker_id": "Speaker2",
+    "start_ts": 44.39,
+    "end_ts": 49.39,
+    "indicators": {
+      "adversarial_alert": {
+        "status": true,
+        "details": {
+          "message": "Etiquette/protocol breach identified.",
+          "categories": [
+            "rude_language"
+          ]
+        }
+      }
+    },
+    "session_id": "2ba8fb04-7656-4244-bc25-e78d8eb12e76",
+    "device_id": "DEVICE_001"
+  }
+}
+
+//
+
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 13,
+    "transcript": "Regular lobby.",
+    "role": "Guest",
+    "speaker_id": "Speaker1",
+    "start_ts": 49.39,
+    "end_ts": 51.19,
+    "indicators": {
+      "negative_sentiment_alert": {
+        "status": true,
+        "details": {
+          "message": "Negative guest sentiment detected in this turn.",
+          "score": 1
+        }
+      }
+    },
+    "session_id": "2ba8fb04-7656-4244-bc25-e78d8eb12e76",
+    "device_id": "DEVICE_001"
+  }
+}
+//
+
+{
+  "type": "final_report",
+  "payload": {
+    "session_id": "2ba8fb04-7656-4244-bc25-e78d8eb12e76",
+    "device_id": "DEVICE_001",
+    "path": "output/DEVICE_001/2025-09-26_09-33-59_2ba8fb04-7656-4244-bc25-e78d8eb12e76/final_report.jsonl",
+    "report": {
+      "session_id": "2ba8fb04-7656-4244-bc25-e78d8eb12e76",
+      "device_id": "DEVICE_001",
+      "raw_metrics": {
+        "agent/receptionist": {
+          "metrics": {
+            "total_speaking_time": 39.24,
+            "total_listening_time": 77.68,
+            "speak_to_listen_ratio": 0.505,
+            "average_pause_duration": 1.107,
+            "total_pause_count": 3,
+            "initial_response_time": 0.68,
+            "average_response_time": 0.531,
+            "pronunciation_score": 0.9,
+            "speech_rate": 194,
+            "language_proficiency": {
+              "en-US": 4.672
+            },
+            "tone_of_voice": 2.833,
+            "energy_of_voice": 2.867,
+            "professional_etiquettes": 0.7,
+            "empathy_in_conversation": 0.3,
+            "overall_sentiment": 0.5,
+            "fatigueness_level": 0,
+            "engagement_level": 0.6,
+            "interruption_count": 9,
+            "average_on_hold_time": 0,
+            "average_time_to_resolution": 0,
+            "time_to_resolution_for_resolved_topics": {},
+            "specificity_score": 0.4,
+            "adaptability_score": 0.4,
+            "initial_greeting": "Yes",
+            "greeting_phrases": [
+              "Good afternoon"
+            ],
+            "farewell_done": "No",
+            "farewell_phrases": [],
+            "adversarial_events_count": 0,
+            "vip_detected": "Yes",
+            "vip_type": "suite_guest",
+            "vip_management_done": "No"
+          },
+          "remarks": {
+            "speak_to_listen_ratio": "",
+            "pause_duration_and_count": "",
+            "response_time": "",
+            "pronunciation_assessment": "",
+            "speech_rate": "194 WPM",
+            "language_proficiency": "",
+            "tone_and_energy_of_voice": "",
+            "professional_etiquettes": "",
+            "empathy_and_sentiment": "",
+            "fatigueness_level": "",
+            "engagement_level": "",
+            "interruptions": "",
+            "average_on_hold_time": "",
+            "average_time_to_resolution": "",
+            "specificity_and_adaptability": "",
+            "adversarial_events": ""
+          }
+        },
+        "conversation": {
+          "metrics": {
+            "start_time": "2025-09-26T09:33:59.448322+00:00",
+            "end_time": "2025-09-26T09:36:41.830666+00:00",
+            "total_conversation_time": 162.382,
+            "interaction_pace": 14.13,
+            "total_silence_duration": 3.32,
+            "time_spent_on_topics": {
+              "booking": 15.48,
+              "check_in": 4.76
+            },
+            "topics_covered_in_conversation": [
+              "booking",
+              "check_in"
+            ],
+            "topics_covered_count": 2,
+            "topics_resolved_in_conversation": [],
+            "topics_resolved_count": 0,
+            "topics_unresolved_in_conversation": [],
+            "topics_unresolved_count": 0,
+            "topic_resolution_success_rate": 0
+          },
+          "remarks": {
+            "conversation_time": "",
+            "interaction_pace": 4,
+            "silence_duration": "",
+            "time_spent_on_topics": {
+              "booking": 15,
+              "check_in": 5
+            },
+            "topics_covered_in_conversation": [
+              "booking",
+              "check_in"
+            ],
+            "topics_resolved_in_conversation": [],
+            "topics_unresolved_in_conversation": [],
+            "overall_conversation_summary": ""
+          }
+        },
+        "guest": {
+          "metrics": {
+            "total_speaking_time": 77.68,
+            "total_listening_time": 39.24,
+            "speak_to_listen_ratio": 1.98,
+            "average_sentiment_in_conversation": 2.333,
+            "average_sentiment_gradient": -0.429,
+            "end_sentiment_and_satisfaction": 1,
+            "attitude_and_language": 0,
+            "pronunciation_score": 0,
+            "speech_rate": 142,
+            "language_proficiency": {
+              "en-US": 5
+            },
+            "tone_of_voice": 2,
+            "energy_of_voice": 2,
+            "interruption_count": 9,
+            "discerning/vip_guest": "Yes",
+            "cross_cultural_guest": "No",
+            "foreign_guest": "No"
+          },
+          "remarks": {
+            "speak_to_listen_ratio": "",
+            "average_sentiment": "2.33",
+            "pronunciation_assessment": "",
+            "speech_rate": "142",
+            "language_proficiency": "",
+            "tone_and_energy_of_voice": "",
+            "interruptions": "9",
+            "discerning/vip_guest": "",
+            "average_time_to_resolution": "",
+            "cross_cultural_guest": "",
+            "foreign_guest": ""
+          }
+        }
+      },
+      "derived_indicators": {
+        "performance_indicators": {
+          "conversation": {
+            "conversation_balance_index": 3.356,
+            "responsiveness_sla": 4.5,
+            "turn_taking_smoothness": 1.538,
+            "pace_pause_control": 5,
+            "silence_use_appropriateness": 5,
+            "remarks": ""
+          },
+          "clarity_language_etiquettes": {
+            "clarity_index": 0.65,
+            "language_fit_score": 4.672,
+            "professional_etiquette_compliance": 0.7,
+            "empathy_signal_strength": 0.3,
+            "remarks": ""
+          },
+          "sentiment_trajectory": {
+            "sentiment_momentum": 0,
+            "recovery_time": 4.469,
+            "remarks": ""
+          },
+          "resolution_and_topic_handling": {
+            "topic_coverage_depth": 2.5,
+            "resolution_rate": 0,
+            "interaction_efficiency_index": 5,
+            "zero_recurrence_rate": 5,
+            "cross_cultural_family_arrangement_fit": 4,
+            "remarks": ""
+          },
+          "risk_escalation": {
+            "greeting_latency_breach": "No",
+            "interruption_hygiene": 0.846,
+            "escalation_likelihood": 0,
+            "sla_breach_risk": 8.9,
+            "adversarial_statements_cultural_sensitivity_index": 5,
+            "agent_fatigue": 0,
+            "compliance_local_standards": 4.5,
+            "remarks": ""
+          },
+          "achievements_and_badges": {
+            "upselling": "",
+            "vip_management": "❌",
+            "greeting_and_farewell": "❌",
+            "topic_resolution": "—"
+          },
+          "engagement_experience": {
+            "active_engagement_score": 0.6,
+            "energy_alignment": 2.867,
+            "closing_confidence": 4,
+            "vip_guest_management": 5,
+            "arabic_language_support_effectiveness": 0,
+            "remarks": ""
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+{
+  "type": "session_end",
+  "payload": {
+    "session_id": "2ba8fb04-7656-4244-bc25-e78d8eb12e76",
+    "device_id": "DEVICE_001"
+  }
+}
+

@@ -1,0 +1,528 @@
+{
+  "type": "session_started",
+  "payload": {
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 2,
+    "transcript": "Hello, I have a reservation under the name Andrew Carter.",
+    "role": "Guest",
+    "speaker_id": "Speaker2",
+    "start_ts": 5.55,
+    "end_ts": 12.35,
+    "indicators": {
+      "foreign_local_alert": {
+        "status": true,
+        "details": {
+          "message": "Foreign guest detected. Cues: non-Arabic language, non-ME accent/cues",
+          "indicators": [
+            "non-Arabic language",
+            "non-ME accent/cues"
+          ]
+        }
+      }
+    },
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+
+//
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 3,
+    "transcript": "Mr. Carter, a pleasure to have you. Let me just pull up your details.",
+    "role": "Agent",
+    "speaker_id": "Speaker1",
+    "start_ts": 12.35,
+    "end_ts": 17.11,
+    "indicators": {
+      "upsell_missed": {
+        "status": true,
+        "details": {
+          "message": "Upsell opportunity missed.",
+          "reason": "Guest is checking in; potential upsell opportunities include room upgrade, breakfast, or lounge access."
+        }
+      }
+    },
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+
+//
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 4,
+    "transcript": "Yes, here we are. It seems you've been assigned suite #1205. Your stay is for one week. I hope your flight was comfortable.",
+    "role": "Agent",
+    "speaker_id": "Speaker1",
+    "start_ts": 18.11,
+    "end_ts": 26.509999999999998,
+    "indicators": {
+      "upsell_missed": {
+        "status": true,
+        "details": {
+          "message": "Upsell opportunity missed.",
+          "reason": "Guest arriving after a flight, airport transfer could be offered."
+        }
+      },
+      "adversarial_alert": {
+        "status": true,
+        "details": {
+          "message": "Etiquette/protocol breach identified.",
+          "categories": [
+            "privacy_violation",
+            "policy_violation"
+          ]
+        }
+      }
+    },
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+//
+
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 5,
+    "transcript": "Yes, thank you.",
+    "role": "Guest",
+    "speaker_id": "Speaker2",
+    "start_ts": 26.51,
+    "end_ts": 28.87,
+    "indicators": {
+      "speech_rate_alert": {
+        "status": true,
+        "details": {
+          "message": "Speech rate 76 WPM is outside the comfortable band [85, 200].",
+          "wpm": 76,
+          "band": "low"
+        }
+      }
+    },
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+//
+
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 6,
+    "transcript": "Actually I was hoping to get that room. I stayed there on my last visit. The view was absolutely amazing and the room was so spacious. It makes a big difference after a long trip I've been traveling for.",
+    "role": "Guest",
+    "speaker_id": "Speaker2",
+    "start_ts": 29.79,
+    "end_ts": 46.03,
+    "indicators": {
+      "repeated_guest_alert": {
+        "status": true,
+        "details": {
+          "message": "Repeated/returning guest likely."
+        }
+      }
+    },
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+
+//
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 8,
+    "transcript": "Oh, I can only imagine. We are happy to accommodate you. Your suite is ready for you. Your luggage has already been taken up by the bellhop. Is there anything else you might need before you settle in? A refreshment, perhaps? A cool towel?",
+    "role": "Agent",
+    "speaker_id": "Speaker1",
+    "start_ts": 52.39,
+    "end_ts": 67.07,
+    "indicators": {
+      "upsell_missed": {
+        "status": true,
+        "details": {
+          "message": "Upsell opportunity missed.",
+          "reason": "Guest mentioned a preference for a specific room (view, spaciousness) and a long trip, indicating potential interest in a room upgrade or lounge access for relaxation."
+        }
+      }
+    },
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+//
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 13,
+    "transcript": "You don't have to look outside the hotel, Mr. Carter. We have an exceptional men's grooming facility right here. Our spa, The Oasis, offers a full range of services including expert shaves, haircuts and more. Our stylists are trained to the highest standards.",
+    "role": "Agent",
+    "speaker_id": "Speaker1",
+    "start_ts": 89.31,
+    "end_ts": 105.99000000000001,
+    "indicators": {
+      "upsell_positive": {
+        "status": true,
+        "details": {
+          "message": "Positive upsell offered by agent.",
+          "offered": "On-site spa/grooming services",
+          "reason": "Guest requested a barber/grooming salon"
+        }
+      }
+    },
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+
+//
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 14,
+    "transcript": "I wasn't aware.",
+    "role": "Guest",
+    "speaker_id": "Speaker2",
+    "start_ts": 107.72,
+    "end_ts": 108.32,
+    "indicators": {
+      "speech_rate_alert": {
+        "status": true,
+        "details": {
+          "message": "Speech rate 300 WPM is outside the comfortable band [85, 200].",
+          "wpm": 300,
+          "band": "high"
+        }
+      }
+    },
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+
+//
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 16,
+    "transcript": "It certainly would. Our head Barber, Mr. Sammy, is well known for his precision. Would you like to me to book a session for you? We can fit you in at your earliest convenience.",
+    "role": "Agent",
+    "speaker_id": "Speaker1",
+    "start_ts": 114.47,
+    "end_ts": 124.71,
+    "indicators": {
+      "upsell_positive": {
+        "status": true,
+        "details": {
+          "message": "Positive upsell offered by agent.",
+          "service": "spa/grooming"
+        }
+      }
+    },
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+//
+
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 18,
+    "transcript": "Check for you.",
+    "role": "Agent",
+    "speaker_id": "Speaker1",
+    "start_ts": 131.59,
+    "end_ts": 133.71,
+    "indicators": {
+      "speech_rate_alert": {
+        "status": true,
+        "details": {
+          "message": "Speech rate 84 WPM is outside the comfortable band [85, 200].",
+          "wpm": 84,
+          "band": "low"
+        }
+      }
+    },
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+
+//
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 19,
+    "transcript": "Yes, 7:00 PM is open. I can book you a full roaming package with a traditional hot towel shave. Please note there is an additional charge for the service which will be added to your room bill. The total is 300 dirhams. Is that acceptable?",
+    "role": "Agent",
+    "speaker_id": "Speaker1",
+    "start_ts": 142.43,
+    "end_ts": 156.67000000000002,
+    "indicators": {
+      "upsell_positive": {
+        "status": true,
+        "details": {
+          "message": "Positive upsell offered by agent.",
+          "service": "spa",
+          "type": "grooming package"
+        }
+      }
+    },
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+//
+{
+  "type": "agent_indicator",
+  "payload": {
+    "chunk_id": 22,
+    "transcript": "you are most welcome please enjoy your stay mr carter and please do not hesitate to contact us if there's anything else you require have a successful business meeting and a pleasant evening thank you",
+    "role": "Agent",
+    "speaker_id": "Speaker1",
+    "start_ts": 169.99,
+    "end_ts": 200.77412724494934,
+    "indicators": {
+      "speech_rate_alert": {
+        "status": true,
+        "details": {
+          "message": "Speech rate 68 WPM is outside the comfortable band [85, 200].",
+          "wpm": 68,
+          "band": "low"
+        }
+      }
+    },
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
+//
+{
+  "type": "final_report",
+  "payload": {
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2",
+    "path": "output/DEVICE_2/2025-09-26_09-45-45_0e628332-b9ff-447a-9017-a8a1113aa9f3/final_report.jsonl",
+    "report": {
+      "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+      "device_id": "DEVICE_2",
+      "raw_metrics": {
+        "agent/receptionist": {
+          "metrics": {
+            "total_speaking_time": 70.44,
+            "total_listening_time": 58.4,
+            "speak_to_listen_ratio": 1.206,
+            "average_pause_duration": 2.182,
+            "total_pause_count": 9,
+            "initial_response_time": 0.16,
+            "average_response_time": 0.54,
+            "pronunciation_score": 0,
+            "speech_rate": 177,
+            "language_proficiency": {
+              "en-US": 4.99
+            },
+            "tone_of_voice": 3.944,
+            "energy_of_voice": 3.333,
+            "professional_etiquettes": 0.9,
+            "empathy_in_conversation": 0.7,
+            "overall_sentiment": 0.9,
+            "fatigueness_level": 0,
+            "engagement_level": 0.8,
+            "interruption_count": 11,
+            "average_on_hold_time": 0,
+            "average_time_to_resolution": 0,
+            "time_to_resolution_for_resolved_topics": {},
+            "specificity_score": 0.7,
+            "adaptability_score": 0.8,
+            "initial_greeting": "Yes",
+            "greeting_phrases": [
+              "Good afternoon",
+              "Welcome"
+            ],
+            "farewell_done": "No",
+            "farewell_phrases": [],
+            "adversarial_events_count": 0,
+            "vip_detected": "No",
+            "vip_type": "none",
+            "vip_management_done": "No"
+          },
+          "remarks": {
+            "speak_to_listen_ratio": "",
+            "pause_duration_and_count": "",
+            "response_time": "",
+            "pronunciation_assessment": "",
+            "speech_rate": "177 WPM",
+            "language_proficiency": "",
+            "tone_and_energy_of_voice": "",
+            "professional_etiquettes": "0.9",
+            "empathy_and_sentiment": "",
+            "fatigueness_level": "0.0",
+            "engagement_level": "0.8",
+            "interruptions": "",
+            "average_on_hold_time": "0.0 minutes",
+            "average_time_to_resolution": "0.0 minutes",
+            "specificity_and_adaptability": "",
+            "adversarial_events": ""
+          }
+        },
+        "conversation": {
+          "metrics": {
+            "start_time": "2025-09-26T09:45:45.923766+00:00",
+            "end_time": "2025-09-26T09:49:08.750614+00:00",
+            "total_conversation_time": 202.827,
+            "interaction_pace": 7.424,
+            "total_silence_duration": 19.64,
+            "time_spent_on_topics": {
+              "booking": 6.8,
+              "facilities": 43.72,
+              "billing": 14.24
+            },
+            "topics_covered_in_conversation": [
+              "booking",
+              "facilities",
+              "billing"
+            ],
+            "topics_covered_count": 3,
+            "topics_resolved_in_conversation": [],
+            "topics_resolved_count": 0,
+            "topics_unresolved_in_conversation": [],
+            "topics_unresolved_count": 0,
+            "topic_resolution_success_rate": 0
+          },
+          "remarks": {
+            "conversation_time": "",
+            "interaction_pace": 7.424,
+            "silence_duration": "",
+            "time_spent_on_topics": {
+              "booking": 6,
+              "facilities": 43,
+              "billing": 14
+            },
+            "topics_covered_in_conversation": [
+              "booking",
+              "facilities",
+              "billing"
+            ],
+            "topics_resolved_in_conversation": [],
+            "topics_unresolved_in_conversation": [],
+            "overall_conversation_summary": "The guest, Andrew Carter, checks into the Sunrise Palace Hotel. He requests a specific room he stayed in previously and inquires about grooming services. The agent books him a grooming session at the hotel spa."
+          }
+        },
+        "guest": {
+          "metrics": {
+            "total_speaking_time": 58.4,
+            "total_listening_time": 70.44,
+            "speak_to_listen_ratio": 0.829,
+            "average_sentiment_in_conversation": 3.625,
+            "average_sentiment_gradient": 0.093,
+            "end_sentiment_and_satisfaction": 5,
+            "attitude_and_language": 0,
+            "pronunciation_score": 0,
+            "speech_rate": 137,
+            "language_proficiency": {
+              "en-US": 5
+            },
+            "tone_of_voice": 4,
+            "energy_of_voice": 3,
+            "interruption_count": 11,
+            "discerning/vip_guest": "No",
+            "cross_cultural_guest": "No",
+            "foreign_guest": "No"
+          },
+          "remarks": {
+            "speak_to_listen_ratio": "",
+            "average_sentiment": "3.625",
+            "pronunciation_assessment": "",
+            "speech_rate": "137",
+            "language_proficiency": "",
+            "tone_and_energy_of_voice": "",
+            "interruptions": "",
+            "discerning/vip_guest": "",
+            "average_time_to_resolution": "",
+            "cross_cultural_guest": "",
+            "foreign_guest": ""
+          }
+        }
+      },
+      "derived_indicators": {
+        "performance_indicators": {
+          "conversation": {
+            "conversation_balance_index": 4.533,
+            "responsiveness_sla": 4.5,
+            "turn_taking_smoothness": 2.381,
+            "pace_pause_control": 4.048,
+            "silence_use_appropriateness": 3,
+            "remarks": ""
+          },
+          "clarity_language_etiquettes": {
+            "clarity_index": 0.35,
+            "language_fit_score": 4.99,
+            "professional_etiquette_compliance": 0.9,
+            "empathy_signal_strength": 0.7,
+            "remarks": ""
+          },
+          "sentiment_trajectory": {
+            "sentiment_momentum": 0,
+            "recovery_time": 4.46,
+            "remarks": ""
+          },
+          "resolution_and_topic_handling": {
+            "topic_coverage_depth": 3,
+            "resolution_rate": 0,
+            "interaction_efficiency_index": 5,
+            "zero_recurrence_rate": 5,
+            "cross_cultural_family_arrangement_fit": 4,
+            "remarks": ""
+          },
+          "risk_escalation": {
+            "greeting_latency_breach": "No",
+            "interruption_hygiene": 1.857,
+            "escalation_likelihood": 0,
+            "sla_breach_risk": 9,
+            "adversarial_statements_cultural_sensitivity_index": 5,
+            "agent_fatigue": 0,
+            "compliance_local_standards": 4.5,
+            "remarks": ""
+  
+          },
+          "achievements_and_badges": {
+            "upselling": "",
+            "vip_management": "",
+            "greeting_and_farewell": "❌",
+            "topic_resolution": "—"
+          },
+          "engagement_experience": {
+            "active_engagement_score": 0.8,
+            "energy_alignment": 3.333,
+            "closing_confidence": 4,
+            "vip_guest_management": 3.5,
+            "arabic_language_support_effectiveness": 0,
+            "remarks": ""
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+
+{
+  "type": "session_end",
+  "payload": {
+    "session_id": "0e628332-b9ff-447a-9017-a8a1113aa9f3",
+    "device_id": "DEVICE_2"
+  }
+}
